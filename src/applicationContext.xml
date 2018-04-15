@@ -9,6 +9,7 @@
 
 	<!-- load the properties file -->
 	<context:property-placeholder location="classpath:sport.properties"/>
+	
     <!-- Define your beans here -->
     <bean id="myFortuneService"
     		class="com.luv2code.springdemo.HappyFortuneService">
@@ -16,7 +17,6 @@
     
     <bean id="myCoach"
     class="com.luv2code.springdemo.TrackCoach">
-    
     <!--  set up constructor injection -->
     <constructor-arg ref="myFortuneService"/>
     </bean>
